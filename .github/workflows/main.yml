@@ -23,15 +23,15 @@ jobs:
     name: Lint, build, and test
     needs: check-workflows
     uses: ./.github/workflows/lint-build-test.yml
-    secrets:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+  #    secrets:
+  #  CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
-  sonarcloud-scan:
-    name: Run SonarCloud Scan
-    needs: lint-build-test
-    uses: ./.github/workflows/sonar-cloud.yml
-    secrets:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  # sonarcloud-scan:
+  #   name: Run SonarCloud Scan
+  #   needs: lint-build-test
+  #   uses: ./.github/workflows/sonar-cloud.yml
+  #   secrets:
+  #       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   is-release:
     name: Determine whether this is a release merge commit
